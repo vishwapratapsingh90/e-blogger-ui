@@ -24,3 +24,25 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+div.page-content {
+  margin: 0 20px 0 20px;
+}
+
+header {
+  padding: 20px 0 20px 0;
+  background-color: aqua;
+  color: black;
+}
+
+body div#content-section {
+  padding: 20px 0 20px 0;
+  background-color: cornsilk;
+  color: darkred;
+}
+
+footer {
+  padding: 20px 0 20px 0;
+  background-color: darkkhaki;
+  color: black;
+}

@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import Header from "./_components/Header";
+import Header from "./_sections/Header";
 import "./globals.css";
+import { ErrorWrapper } from "./error-wrapper";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,7 +31,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full flex flex-col">
         <Header />
-        <div id="content-section">{children}</div>
+        <div id="content-section">
+          <ErrorWrapper>{children}</ErrorWrapper>
+        </div>
         <footer>Footer</footer>
       </body>
     </html>
